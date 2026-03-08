@@ -1,390 +1,372 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.AppleSystemUIFontMonospaced'}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.AppleSystemUIFontMonospaced'; min-height: 15.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyacinth Advising | E-commerce Growth Partners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hyacinth-orange: #FF4500;
+            --navy-dark: #0f172a;
+        }
+        body {
+            background-color: #ffffff;
+            color: #334155;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-accent { color: var(--hyacinth-orange); }
+        .bg-accent { background-color: var(--hyacinth-orange); }
+        .text-navy { color: var(--navy-dark); }
+        .bg-navy { background-color: var(--navy-dark); }
+        
+        /* Navigation Links */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--hyacinth-orange);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        .nav-link:hover { color: var(--navy-dark); }
+
+        /* Service Pillar Styling */
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--hyacinth-orange);
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+        }
+
+        /* Platform Grid Icons */
+        .platform-card {
+            background: #f8fafc;
+            border: 1px solid #f1f5f9;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        .platform-card:hover {
+            background: #ffffff;
+            border-color: #e2e8f0;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+        .platform-card img {
+            max-width: 100%;
+            max-height: 60px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Animations */
+        @keyframes fade-up {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up { animation: fade-up 0.8s forwards; }
+    </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p2">&lt;html lang="en" class="scroll-smooth"&gt;</p>
-<p class="p2">&lt;head&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;title&gt;Hyacinth Advising | E-commerce Growth Partners&lt;/title&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>--hyacinth-orange: #FF4500;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>--navy-dark: #0f172a;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>color: #334155;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>font-family: 'Plus Jakarta Sans', sans-serif;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.font-serif {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>font-family: 'Playfair Display', serif;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.text-accent { color: var(--hyacinth-orange); }</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.bg-accent { background-color: var(--hyacinth-orange); }</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.text-navy { color: var(--navy-dark); }</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.bg-navy { background-color: var(--navy-dark); }</p>
-<p class="p3"><span class="Apple-converted-space">        </span></p>
-<p class="p2"><span class="Apple-converted-space">        </span>/* Navigation Links */</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.nav-link {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>transition: color 0.3s ease;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.nav-link::after {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>content: '';</p>
-<p class="p2"><span class="Apple-converted-space">            </span>position: absolute;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>width: 0;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>height: 2px;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>bottom: -4px;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>left: 0;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>background-color: var(--hyacinth-orange);</p>
-<p class="p2"><span class="Apple-converted-space">            </span>transition: width 0.3s ease;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.nav-link:hover::after { width: 100%; }</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.nav-link:hover { color: var(--navy-dark); }</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">        </span>/* Service Pillar Styling */</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.service-card {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>background: #ffffff;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>border: 1px solid #f1f5f9;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.service-card:hover {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>transform: translateY(-8px);</p>
-<p class="p2"><span class="Apple-converted-space">            </span>border-color: var(--hyacinth-orange);</p>
-<p class="p2"><span class="Apple-converted-space">            </span>box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">        </span>/* Platform Grid Icons */</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.platform-card {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>background: #f8fafc;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>border: 1px solid #f1f5f9;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>height: 140px;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>border-radius: 1.5rem;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.platform-card:hover {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>background: #ffffff;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>border-color: #e2e8f0;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.platform-card img {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>max-width: 100%;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>max-height: 60px;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>width: auto;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>height: auto;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>object-fit: contain;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">        </span>/* Animations */</p>
-<p class="p2"><span class="Apple-converted-space">        </span>@keyframes fade-up {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(20px); }</p>
-<p class="p2"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>.animate-fade-up { animation: fade-up 0.8s forwards; }</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p2">&lt;/head&gt;</p>
-<p class="p2">&lt;body class="selection:bg-orange-100 selection:text-orange-600"&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Navigation --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 h-20 flex items-center bg-white border-b border-gray-100"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;a href="#home" class="flex items-center gap-3 group"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png"<span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">                     </span>alt="Hyacinth Advising Logo"<span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">                     </span>class="h-10 w-10 object-cover rounded-full border border-gray-100 transition-transform group-hover:scale-105"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;span class="text-lg font-extrabold tracking-tighter uppercase leading-none text-navy"&gt;Hyacinth&lt;/span&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;span class="text-[10px] font-bold tracking-[0.3em] uppercase leading-none text-accent"&gt;Advising&lt;/span&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
-<p class="p3"><span class="Apple-converted-space">            </span></p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="hidden md:flex items-center gap-10 text-[11px] font-bold tracking-widest uppercase text-slate-500"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="nav-link"&gt;About&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;a href="#services" class="nav-link"&gt;Services&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;a href="#platforms" class="nav-link"&gt;Platforms&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="bg-navy text-white px-8 py-3 rounded hover:bg-accent transition-all shadow-lg shadow-navy/10"&gt;Request Audit&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;button class="md:hidden text-navy" id="mobile-menu-btn" aria-label="Toggle Menu"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /&gt;&lt;/svg&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Mobile Menu Overlay --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;div id="mobile-menu" class="fixed inset-0 z-[60] bg-white translate-x-full transition-transform duration-300 flex flex-col items-center justify-center gap-8 text-2xl font-bold uppercase tracking-widest md:hidden"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;button id="close-menu" class="absolute top-6 right-6 text-navy"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /&gt;&lt;/svg&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;a href="#about" class="mobile-link"&gt;About&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;a href="#services" class="mobile-link"&gt;Services&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;a href="#platforms" class="mobile-link"&gt;Platforms&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;a href="#contact" class="mobile-link text-accent"&gt;Request Audit&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Hero Section --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;header id="home" class="relative min-h-screen flex items-center pt-20 bg-slate-50 overflow-hidden"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="absolute inset-0 z-0"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="absolute top-0 right-0 w-1/2 h-full bg-white hidden lg:block" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p3"><span class="Apple-converted-space">        </span></p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10 w-full"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="animate-fade-up"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;span class="inline-block py-1 px-4 rounded-full bg-orange-50 text-accent text-[10px] font-bold tracking-[0.3em] uppercase mb-6 border border-orange-100"&gt;E-commerce Growth Partners&lt;/span&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.05] mb-8 text-navy uppercase tracking-tighter"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>Full account &lt;br&gt;management for &lt;br&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;span class="text-accent italic font-serif italic font-normal lowercase tracking-normal"&gt;modern marketplaces.&lt;/span&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/h1&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;p class="text-lg text-slate-600 mb-10 max-w-xl leading-relaxed"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>We partner with brands across Amazon and other e-commerce channels to build, manage, and grow high-performing storefronts. From launch readiness to mature channel optimization.</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-wrap gap-4"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;a href="#contact" class="bg-navy text-white font-bold px-10 py-5 rounded hover:bg-accent transition-all shadow-xl shadow-navy/10 flex items-center gap-3 group"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>Get Started &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /&gt;&lt;/svg&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;a href="#services" class="bg-white border border-slate-200 px-10 py-5 rounded text-navy font-bold hover:bg-slate-50 transition-all"&gt;View Services&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="hidden lg:flex justify-end relative"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="absolute -inset-10 bg-orange-100 blur-[100px] rounded-full opacity-30"&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png"<span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">                     </span>alt="Hyacinth Advising Botanical"<span class="Apple-converted-space"> </span></p>
-<p class="p2"><span class="Apple-converted-space">                     </span>class="relative z-10 w-[420px] h-[560px] object-cover rounded-[3rem] shadow-2xl border-8 border-white transition-transform duration-700 hover:scale-[1.02]"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- About / Value Prop Section --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;section id="about" class="py-24 bg-white"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-6"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="grid lg:grid-cols-2 gap-20 items-center"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-4xl font-extrabold text-navy mb-8 leading-tight"&gt;Built for measurable &lt;br&gt;&lt;span class="text-accent italic font-serif italic font-normal"&gt;channel ownership.&lt;/span&gt;&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;p class="text-slate-500 text-lg mb-8 leading-relaxed"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>Our approach blends strategic planning with day-to-day marketplace execution so clients gain a reliable operating partner—not just isolated tactical help. We improve visibility, conversion, operational control, and profitable growth.</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;div class="grid grid-cols-2 gap-8"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-2xl font-extrabold text-navy"&gt;Sales Visibility&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-400 leading-snug"&gt;Track sales trends and conversion data with total clarity.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-2xl font-extrabold text-navy"&gt;Ad Efficiency&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-400 leading-snug"&gt;ROAS-focused management and search-term discipline.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-2xl font-extrabold text-navy"&gt;Catalog Control&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-400 leading-snug"&gt;Listing refreshes, hygiene, and buy-box protection.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-2xl font-extrabold text-navy"&gt;Operational Discipline&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-400 leading-snug"&gt;Forecasting, supply chain coordination, and account health.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="bg-slate-50 p-12 rounded-[3rem] border border-slate-100"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8"&gt;What clients rely on us for&lt;/h3&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-6"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start gap-4"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /&gt;&lt;/svg&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-navy font-semibold"&gt;Marketplace setup and launch coordination&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start gap-4"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /&gt;&lt;/svg&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-navy font-semibold"&gt;Listing, content, and conversion optimization&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start gap-4"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /&gt;&lt;/svg&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-navy font-semibold"&gt;Advertising management and ROAS discipline&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start gap-4"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /&gt;&lt;/svg&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-navy font-semibold"&gt;Inventory, pricing, and account-health oversight&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start gap-4"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /&gt;&lt;/svg&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-navy font-semibold"&gt;Analytics, reporting, and growth planning&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Services Grid --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;section id="services" class="py-32 bg-slate-50"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-6"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-20 max-w-2xl mx-auto"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;h2 class="text-4xl font-extrabold text-navy mb-6"&gt;Service Models&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;p class="text-slate-500"&gt;We support launch projects, account cleanups, channel optimization work, or ongoing full-account management.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="grid lg:grid-cols-2 gap-10"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;!-- Seller Boost --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="service-card p-12 rounded-[3rem] h-full flex flex-col"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4"&gt;Phase 01&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-3xl font-extrabold text-navy mb-6"&gt;Seller Boost&lt;/h3&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;p class="text-slate-600 mb-8"&gt;For new or early-stage brands that need the right foundation: setup, launch assets, operational readiness, and a clear path into e-commerce.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-6 flex-grow"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="font-bold text-navy"&gt;Account &amp; Storefront Setup&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-500"&gt;Compliance, brand profile alignment, and structural configuration.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="font-bold text-navy"&gt;Listing &amp; Content Foundation&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-500"&gt;Keyword-informed titles, content discoverability, and catalog structure.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="font-bold text-navy"&gt;Operational Readiness&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-500"&gt;Inventory, fulfillment considerations, and basic reporting framework.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;!-- 360 Management --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="service-card p-12 rounded-[3rem] h-full flex flex-col"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4"&gt;Phase 02&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-3xl font-extrabold text-navy mb-6"&gt;360 Management&lt;/h3&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;p class="text-slate-600 mb-8"&gt;For brands already selling online and ready to sharpen performance through better advertising efficiency, catalog management, and structured growth execution.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-6 flex-grow"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="font-bold text-navy"&gt;Advertising Efficiency&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-500"&gt;Ongoing PPC management, budget discipline, and search-term refinement.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="font-bold text-navy"&gt;Catalog, Pricing &amp; Health&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-500"&gt;Listing refreshes, hygiene monitoring, and compliance risk oversight.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="font-bold text-navy"&gt;Reporting &amp; Planning&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-slate-500"&gt;Business reviews, KPI dashboards, and Koordinierte recommendations.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Platforms Supported --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;section id="platforms" class="py-32 bg-white"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-6"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="max-w-xl"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-4xl font-extrabold text-navy mb-6 italic font-serif italic font-normal uppercase tracking-tight italic"&gt;Platforms Supported&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;p class="text-slate-500"&gt;Marketplace and direct-to-consumer support tailored to each client's channel mix. We focus on one priority platform or coordinated across multiple channels.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="text-xs font-bold tracking-[0.4em] uppercase text-accent border-l-2 border-accent pl-4"&gt;Channel Specialists&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="platform-card"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="platform-card"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;img src="https://i.ibb.co/8DvzsfF4/walmart-logo-png-22.png" alt="Walmart Logo"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="platform-card"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="platform-card"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify Logo"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Contact Section --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="py-32 bg-white"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="max-w-5xl mx-auto px-6"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="bg-navy rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden shadow-2xl"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[100px] pointer-events-none"&gt;&lt;/div&gt;</p>
-<p class="p3"><span class="Apple-converted-space">                </span></p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="grid lg:grid-cols-2 gap-16 relative z-10"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;h2 class="text-4xl md:text-5xl font-extrabold mb-8 italic font-serif italic font-normal"&gt;Ready to improve performance?&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;p class="text-slate-300 text-lg mb-10 leading-relaxed"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>Hyacinth Advising helps brands launch with more confidence and scale with better control. Contact us to schedule an account audit.</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png" alt="Hyacinth Advising" class="h-12 w-12 rounded-full border border-white/20"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;div class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400"&gt;Trusted operating partner&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;form class="space-y-6" onsubmit="event.preventDefault(); alert('Audit requested! Our team will reach out shortly.');"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;label class="text-[10px] font-bold uppercase tracking-widest text-slate-500 ml-1"&gt;Company / Brand&lt;/label&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;input type="text" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-accent transition focus:bg-white/10" placeholder="Your Brand Name"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-1"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;label class="text-[10px] font-bold uppercase tracking-widest text-slate-500 ml-1"&gt;Work Email&lt;/label&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                            </span>&lt;input type="email" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-accent transition focus:bg-white/10" placeholder="sarah@company.com"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span>&lt;button type="submit" class="w-full bg-accent text-white font-bold py-5 rounded-2xl shadow-xl shadow-orange-600/20 hover:scale-[1.01] transition-transform uppercase tracking-widest"&gt;Request Free Audit&lt;/button&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;/form&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;footer class="py-20 bg-slate-50 border-t border-slate-100"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-6 text-center"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center justify-center gap-4 mb-8"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png" alt="Hyacinth Logo" class="h-8 w-8 object-cover rounded-full"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;div class="text-sm font-black tracking-tighter uppercase text-navy"&gt;Hyacinth Advising&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;p class="text-sm text-slate-500 max-w-sm mx-auto mb-10 leading-relaxed uppercase tracking-widest text-[10px]"&gt;Strategic planning combined with day-to-day marketplace execution.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;div class="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-300"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&amp;copy; 2026 Hyacinth Advising. All rights reserved.</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>const btn = document.getElementById('mobile-menu-btn');</p>
-<p class="p2"><span class="Apple-converted-space">        </span>const closeBtn = document.getElementById('close-menu');</p>
-<p class="p2"><span class="Apple-converted-space">        </span>const menu = document.getElementById('mobile-menu');</p>
-<p class="p2"><span class="Apple-converted-space">        </span>const nav = document.getElementById('main-nav');</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">        </span>function toggleMenu() {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>menu.classList.toggle('translate-x-full');</p>
-<p class="p2"><span class="Apple-converted-space">            </span>document.body.classList.toggle('overflow-hidden');</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">        </span>btn.addEventListener('click', toggleMenu);</p>
-<p class="p2"><span class="Apple-converted-space">        </span>closeBtn.addEventListener('click', toggleMenu);</p>
-<p class="p2"><span class="Apple-converted-space">        </span>document.querySelectorAll('.mobile-link').forEach(link =&gt; link.addEventListener('click', toggleMenu));</p>
-<p class="p3"><br></p>
-<p class="p2"><span class="Apple-converted-space">        </span>window.addEventListener('scroll', () =&gt; {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>if (window.scrollY &gt; 20) {</p>
-<p class="p2"><span class="Apple-converted-space">                </span>nav.classList.add('shadow-sm', 'bg-white/95', 'backdrop-blur-md');</p>
-<p class="p2"><span class="Apple-converted-space">            </span>} else {</p>
-<p class="p2"><span class="Apple-converted-space">                </span>nav.classList.remove('shadow-sm', 'bg-white/95', 'backdrop-blur-md');</p>
-<p class="p2"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p2">&lt;/body&gt;</p>
-<p class="p2">&lt;/html&gt;</p>
+<body class="selection:bg-orange-100 selection:text-orange-600">
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 h-20 flex items-center bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-3 group">
+                <img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png" 
+                     alt="Hyacinth Advising Logo" 
+                     class="h-10 w-10 object-cover rounded-full border border-gray-100 transition-transform group-hover:scale-105">
+                <div class="flex flex-col">
+                    <span class="text-lg font-extrabold tracking-tighter uppercase leading-none text-navy">Hyacinth</span>
+                    <span class="text-[10px] font-bold tracking-[0.3em] uppercase leading-none text-accent">Advising</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-10 text-[11px] font-bold tracking-widest uppercase text-slate-500">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#platforms" class="nav-link">Platforms</a>
+                <a href="#contact" class="bg-navy text-white px-8 py-3 rounded hover:bg-accent transition-all shadow-lg shadow-navy/10">Request Audit</a>
+            </div>
+
+            <button class="md:hidden text-navy" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-white translate-x-full transition-transform duration-300 flex flex-col items-center justify-center gap-8 text-2xl font-bold uppercase tracking-widest md:hidden">
+        <button id="close-menu" class="absolute top-6 right-6 text-navy">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#platforms" class="mobile-link">Platforms</a>
+        <a href="#contact" class="mobile-link text-accent">Request Audit</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative min-h-screen flex items-center pt-20 bg-slate-50 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-white hidden lg:block" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10 w-full">
+            <div class="animate-fade-up">
+                <span class="inline-block py-1 px-4 rounded-full bg-orange-50 text-accent text-[10px] font-bold tracking-[0.3em] uppercase mb-6 border border-orange-100">E-commerce Growth Partners</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.05] mb-8 text-navy uppercase tracking-tighter">
+                    Full account <br>management for <br>
+                    <span class="text-accent italic font-serif italic font-normal lowercase tracking-normal">modern marketplaces.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-10 max-w-xl leading-relaxed">
+                    We partner with brands across Amazon and other e-commerce channels to build, manage, and grow high-performing storefronts. From launch readiness to mature channel optimization.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-navy text-white font-bold px-10 py-5 rounded hover:bg-accent transition-all shadow-xl shadow-navy/10 flex items-center gap-3 group">
+                        Get Started <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    </a>
+                    <a href="#services" class="bg-white border border-slate-200 px-10 py-5 rounded text-navy font-bold hover:bg-slate-50 transition-all">View Services</a>
+                </div>
+            </div>
+            <div class="hidden lg:flex justify-end relative">
+                <div class="absolute -inset-10 bg-orange-100 blur-[100px] rounded-full opacity-30"></div>
+                <img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png" 
+                     alt="Hyacinth Advising Botanical" 
+                     class="relative z-10 w-[420px] h-[560px] object-cover rounded-[3rem] shadow-2xl border-8 border-white transition-transform duration-700 hover:scale-[1.02]">
+            </div>
+        </div>
+    </header>
+
+    <!-- About / Value Prop Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-4xl font-extrabold text-navy mb-8 leading-tight">Built for measurable <br><span class="text-accent italic font-serif italic font-normal">channel ownership.</span></h2>
+                    <p class="text-slate-500 text-lg mb-8 leading-relaxed">
+                        Our approach blends strategic planning with day-to-day marketplace execution so clients gain a reliable operating partner—not just isolated tactical help. We improve visibility, conversion, operational control, and profitable growth.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <div class="text-2xl font-extrabold text-navy">Sales Visibility</div>
+                            <p class="text-sm text-slate-400 leading-snug">Track sales trends and conversion data with total clarity.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="text-2xl font-extrabold text-navy">Ad Efficiency</div>
+                            <p class="text-sm text-slate-400 leading-snug">ROAS-focused management and search-term discipline.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="text-2xl font-extrabold text-navy">Catalog Control</div>
+                            <p class="text-sm text-slate-400 leading-snug">Listing refreshes, hygiene, and buy-box protection.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="text-2xl font-extrabold text-navy">Operational Discipline</div>
+                            <p class="text-sm text-slate-400 leading-snug">Forecasting, supply chain coordination, and account health.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-12 rounded-[3rem] border border-slate-100">
+                    <h3 class="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">What clients rely on us for</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg></div>
+                            <div class="text-navy font-semibold">Marketplace setup and launch coordination</div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg></div>
+                            <div class="text-navy font-semibold">Listing, content, and conversion optimization</div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg></div>
+                            <div class="text-navy font-semibold">Advertising management and ROAS discipline</div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg></div>
+                            <div class="text-navy font-semibold">Inventory, pricing, and account-health oversight</div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-accent/10 text-accent p-1.5 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg></div>
+                            <div class="text-navy font-semibold">Analytics, reporting, and growth planning</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 max-w-2xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-navy mb-6">Service Models</h2>
+                <p class="text-slate-500">We support launch projects, account cleanups, channel optimization work, or ongoing full-account management.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10">
+                <!-- Seller Boost -->
+                <div class="service-card p-12 rounded-[3rem] h-full flex flex-col">
+                    <div class="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4">Phase 01</div>
+                    <h3 class="text-3xl font-extrabold text-navy mb-6">Seller Boost</h3>
+                    <p class="text-slate-600 mb-8">For new or early-stage brands that need the right foundation: setup, launch assets, operational readiness, and a clear path into e-commerce.</p>
+                    <div class="space-y-6 flex-grow">
+                        <div class="space-y-1">
+                            <div class="font-bold text-navy">Account & Storefront Setup</div>
+                            <p class="text-sm text-slate-500">Compliance, brand profile alignment, and structural configuration.</p>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-bold text-navy">Listing & Content Foundation</div>
+                            <p class="text-sm text-slate-500">Keyword-informed titles, content discoverability, and catalog structure.</p>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-bold text-navy">Operational Readiness</div>
+                            <p class="text-sm text-slate-500">Inventory, fulfillment considerations, and basic reporting framework.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 360 Management -->
+                <div class="service-card p-12 rounded-[3rem] h-full flex flex-col">
+                    <div class="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4">Phase 02</div>
+                    <h3 class="text-3xl font-extrabold text-navy mb-6">360 Management</h3>
+                    <p class="text-slate-600 mb-8">For brands already selling online and ready to sharpen performance through better advertising efficiency, catalog management, and structured growth execution.</p>
+                    <div class="space-y-6 flex-grow">
+                        <div class="space-y-1">
+                            <div class="font-bold text-navy">Advertising Efficiency</div>
+                            <p class="text-sm text-slate-500">Ongoing PPC management, budget discipline, and search-term refinement.</p>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-bold text-navy">Catalog, Pricing & Health</div>
+                            <p class="text-sm text-slate-500">Listing refreshes, hygiene monitoring, and compliance risk oversight.</p>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="font-bold text-navy">Reporting & Planning</div>
+                            <p class="text-sm text-slate-500">Business reviews, KPI dashboards, and Koordinierte recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Supported -->
+    <section id="platforms" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-extrabold text-navy mb-6 italic font-serif italic font-normal uppercase tracking-tight italic">Platforms Supported</h2>
+                    <p class="text-slate-500">Marketplace and direct-to-consumer support tailored to each client's channel mix. We focus on one priority platform or coordinated across multiple channels.</p>
+                </div>
+                <div class="text-xs font-bold tracking-[0.4em] uppercase text-accent border-l-2 border-accent pl-4">Channel Specialists</div>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="platform-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                </div>
+                <div class="platform-card">
+                    <img src="https://i.ibb.co/8DvzsfF4/walmart-logo-png-22.png" alt="Walmart Logo">
+                </div>
+                <div class="platform-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo">
+                </div>
+                <div class="platform-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-navy rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
+                
+                <div class="grid lg:grid-cols-2 gap-16 relative z-10">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-extrabold mb-8 italic font-serif italic font-normal">Ready to improve performance?</h2>
+                        <p class="text-slate-300 text-lg mb-10 leading-relaxed">
+                            Hyacinth Advising helps brands launch with more confidence and scale with better control. Contact us to schedule an account audit.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png" alt="Hyacinth Advising" class="h-12 w-12 rounded-full border border-white/20">
+                            <div class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Trusted operating partner</div>
+                        </div>
+                    </div>
+                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Audit requested! Our team will reach out shortly.');">
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-slate-500 ml-1">Company / Brand</label>
+                            <input type="text" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-accent transition focus:bg-white/10" placeholder="Your Brand Name">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-slate-500 ml-1">Work Email</label>
+                            <input type="email" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-accent transition focus:bg-white/10" placeholder="sarah@company.com">
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-white font-bold py-5 rounded-2xl shadow-xl shadow-orange-600/20 hover:scale-[1.01] transition-transform uppercase tracking-widest">Request Free Audit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-4 mb-8">
+                <img src="https://i.ibb.co/CpPn61Nv/Chat-GPT-Image-Mar-8-2026-at-09-35-26-AM.png" alt="Hyacinth Logo" class="h-8 w-8 object-cover rounded-full">
+                <div class="text-sm font-black tracking-tighter uppercase text-navy">Hyacinth Advising</div>
+            </div>
+            <p class="text-sm text-slate-500 max-w-sm mx-auto mb-10 leading-relaxed uppercase tracking-widest text-[10px]">Strategic planning combined with day-to-day marketplace execution.</p>
+            <div class="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-300">
+                &copy; 2026 Hyacinth Advising. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const menu = document.getElementById('mobile-menu');
+        const nav = document.getElementById('main-nav');
+
+        function toggleMenu() {
+            menu.classList.toggle('translate-x-full');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        btn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', toggleMenu));
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm', 'bg-white/95', 'backdrop-blur-md');
+            } else {
+                nav.classList.remove('shadow-sm', 'bg-white/95', 'backdrop-blur-md');
+            }
+        });
+    </script>
 </body>
 </html>
